@@ -20,6 +20,9 @@ header nav ul{
 header nav ul li{
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
 .inicial{
     display: flex;
     position: relative;

@@ -18,21 +18,20 @@
       <div class="title">Biblioteca</div>
       <nav>
         <ul>
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./livro.html"><li>livros</li></a>
+          <a class="li" href="./index.html"><li>Home</li></a>
+          <a class="li" href="./livro.html"><li>livros</li></a>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
       <div class="categories">
-        <div class="item active" id="image1">
-          <div class="imagem">
+        <div class="item active" >
+          <div class="imagem" id="image1">
             <img src="./img/imagem_livro.jpg" alt="" />
           </div>
 
           <div class="content">
-            <p class="title">Biblioteca Virtual</p>
+            <p class="title1">Biblioteca Virtual</p>
             <p class="text">
               Nossa biblioteca virtual é um espaço digital que reúne e
               disponibiliza livros, artigos, revistas, documentos e outros
@@ -47,69 +46,7 @@
           </div>
         </div>
 
-        <div class="item" id="image2">
-          <div class="imagem">
-            <img src="./img/livro_cintifico.jpg" alt="" />
-          </div>
 
-          <div class="content">
-            <p class="title">Ficçao científica</p>
-            <p class="text">
-              Os livros de ficção científica exploram mundos que misturam
-              ciência, tecnologia e imaginação. Nesse gênero, os autores criam
-              histórias que muitas vezes se passam no futuro, no espaço ou em
-              realidades alternativas, levantando questões sobre o avanço
-              científico e seus impactos na humanidade. Robôs, viagens no tempo,
-              inteligência artificial e civilizações alienígenas são temas
-              comuns, usados não apenas para entreter, mas também para refletir
-              sobre ética, sociedade e o destino humano. Ler ficção científica é
-              uma forma de viajar para além do possível, estimulando a
-              criatividade e convidando o leitor a pensar sobre os limites do
-              conhecimento e da própria realidade.
-            </p>
-            <button>Saiba mais</button>
-          </div>
-        </div>
-
-        <div class="item" id="image3">
-          <div class="imagem">
-            <img src="./img/livro_fantasia.jpg" alt="" />
-          </div>
-
-          <div class="content">
-            <p class="title">Fantasia</p>
-            <p class="text">
-              Os livros de fantasia transportam o leitor para mundos cheios de
-              magia, criaturas míticas e aventuras épicas. Nesse gênero, a
-              imaginação é a chave: dragões, elfos, feiticeiros e reinos
-              encantados fazem parte de narrativas que desafiam as leis da
-              realidade. Além do entretenimento, a fantasia também traz
-              reflexões sobre coragem, amizade, poder e a luta entre o bem e o
-              mal. Ler esse tipo de obra é mergulhar em universos mágicos que
-              despertam a criatividade e convidam o leitor a sonhar com
-              possibilidades além do mundo real.
-            </p>
-            <button>Saiba mais</button>
-          </div>
-        </div>
-
-        <div class="item" id="image4">
-          <div class="imagem">
-            <img src="./img/livro_suspense.jpg" alt="" />
-          </div>
-          <div class="content">
-            <p class="title">Suspense</p>
-            <p class="text">
-              Os livros de suspense são escritos para prender a atenção do
-              leitor do começo ao fim. Neles, a trama é cercada de mistério,
-              tensão e surpresas, mantendo sempre a sensação de que algo
-              importante está prestes a acontecer. Reviravoltas inesperadas,
-              segredos escondidos e personagens enigmáticos fazem parte desse
-              gênero, que provoca curiosidade e, muitas vezes, até medo. Ler um
-              livro de suspense é viver a experiência de estar em alerta,
-              tentando descobrir a verdade antes que ela seja revelada.
-            </p>
-            <button>Saiba mais</button>
           </div>
         </div>
       </div>
@@ -125,27 +62,20 @@
           <p class="title">Livros em Destaques</p>
         </div>
         <div class="books">
-          <div class="book">
-            <img
-              class="imgHover"
-              src="./img/capa-livro-devoradores-de-estrelas.jpg"
-              alt=""
-            />
+          <div class="book card" data-id="1">
+           <a href="./pagina_livros.html?id=1"><img class="imgHover" src="./img/livro_cientifico1.jpg" alt="" /></a>
           </div>
-          <div class="book">
-            <img class="imgHover" src="./img/content.jpeg" alt="" />
+          <div class="book card" data-id="6">
+            <a href="./pagina_livros.html?id=6"><img class="imgHover" src="./img/livro_de_fantasia1.jpeg" alt="" /></a>
           </div>
-          <div class="book">
-            <img
-              class="imgHover"
-              src="./img/511at4ci5xL._SY445_SX342_ControlCacheEqualizer_.jpg"
-              alt=""
-            />
+          <div class="book card" data-id="11">
+            <a href="./pagina_livros.html?id=11"><img class="imgHover" src="./img/livro_de_suspense1.jpg" alt="" /> </a>
           </div>
         </div>
       </div>
       <footer></footer>
-    </main>
+
     <script src="./app.js"></script>
+    <script src="./app_livro.js"></script>
   </body>
 </html>

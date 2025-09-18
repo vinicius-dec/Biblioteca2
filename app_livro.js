@@ -206,12 +206,14 @@ function mostrarLivrosDeMesmaCategoria(event) {
     if (livro.categorias === categoria) {
       container.innerHTML += ` 
       <div class="card" data-id="${livro.id}">
-        <div class="imagem">
-          <img class="img" src="${livro.imagem}" alt="" />
-        </div>
-        <div class="nome">
-          <p>${livro.titulo}</p>
-        </div>
+        <a href="./pagina_livros.html?id=${livro.id}">
+          <div class="imagem">
+            <img class="img" src="${livro.imagem}" alt="" />
+          </div>
+          <div class="nome">
+            <p>${livro.titulo}</p>
+          </div>
+        </a>
       </div>`;
     }
     console.log(livro.id);
@@ -220,16 +222,4 @@ function mostrarLivrosDeMesmaCategoria(event) {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-  console.log("cards encontrados:", cards.length);
 
-  cards.forEach((card) => {
-    card.addEventListener("click", () => {
-      const id = card.dataset.id;
-      if (!id) return;
-      // redireciona para a página de detalhes passando o id na URL
-      window.location.href = `pagina_livros.html?id=${encodeURIComponent(id)}`;
-    });
-  });
-});
